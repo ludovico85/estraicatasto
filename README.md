@@ -35,7 +35,7 @@ Utile per **geometri, pianificatori, tecnici GIS** che lavorano su dati catastal
 
 ### 📦 Da ZIP (manuale)
 
-1. Scarica l'ultima versione da [Releases](https://github.com/frateludovico/estraicatasto/releases)
+1. Scarica l'ultima versione da [Releases](https://github.com/ludovico85/estraicatasto/releases)
 2. In QGIS: `Plugins > Gestisci e installa plugin > Installa da file .zip`
 3. Seleziona `estraicatasto_vX.Y.Z.zip`
 4. Abilita il plugin
