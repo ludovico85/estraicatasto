@@ -1,1 +1,42 @@
-# Plugin QGIS per estrarre e organizzare le geometrie catastali dal formato GeoJSON scaricabile dal SISTER a GeoPackage
+# EstraiCatasto
+
+[![Plugin QGIS](https://img.shields.io/badge/QGIS-3.22%2B-green.svg)](https://qgis.org)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Build Status](https://img.shields.io/badge/build-manual-blue.svg)]()
+[![Last update](https://img.shields.io/github/last-commit/frateludovico/estraicatasto)](https://github.com/frateludovico/estraicatasto/commits/main)
+[![Issues](https://img.shields.io/github/issues/frateludovico/estraicatasto)](https://github.com/frateludovico/estraicatasto/issues)
+[![Releases](https://img.shields.io/github/v/release/frateludovico/estraicatasto)](https://github.com/frateludovico/estraicatasto/releases)
+
+---
+
+## 🗂️ Descrizione
+
+**EstraiCatasto** è un plugin per QGIS che consente di:
+
+- Caricare e analizzare file GeoJSON contenenti dati catastali
+- Suddividere geometrie per tipo (punti, linee, poligoni)
+- Classificare gli oggetti per attributo (FABBRICATI, PARTICELLE, ACQUE, STRADE, ECC.)
+- Salvare i layer in un file GeoPackage
+- Caricarli automaticamente nel progetto QGIS
+- Caricare uno stile predefinito (ispirato allo stide CAD e allo stile WMS)
+
+Utile per **geometri, pianificatori, tecnici GIS** che lavorano su dati catastali distributi tramite piattafomra SISTER dell'[Agenzia delle Entrate](https://iampe.agenziaentrate.gov.it/sam/UI/Login?realm=/agenziaentrate).
+
+---
+
+## ✅ Requisiti
+
+- QGIS **3.22** o superiore
+- Testato su Windows
+
+---
+
+## 🚀 Installazione
+
+### 📦 Da ZIP (manuale)
+
+1. Scarica l'ultima versione da [Releases](https://github.com/frateludovico/estraicatasto/releases)
+2. In QGIS: `Plugins > Gestisci e installa plugin > Installa da file .zip`
+3. Seleziona `estraicatasto_vX.Y.Z.zip`
+4. Abilita il plugin
+
