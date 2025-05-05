@@ -1,0 +1,47 @@
+# This file contains metadata for your plugin.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Estrai Catasto
+qgisMinimumVersion=3.0
+description=EstraiCatasto is a QGIS plugin designed to streamline the processing of Italian cadastral vector data
+version=0.1
+author=Ludovico Frate
+email=frateludovico@gmail.com
+
+about=EstraiCatasto is a QGIS plugin designed to streamline the processing of Italian cadastral vector data. It allows users to load one or more GeoJSON files containing cadastral features (e.g., parcels, buildings, land use), automatically split them into separate layers based on the unique values of a selected attribute (e.g., foglio, particella), apply categorized symbology, and export the result into a single GeoPackage file. The plugin is optimized for workflows involving Italian cadastral mapping and supports automated styling using attribute-driven color schemes. It is ideal for professionals working in land registry, environmental assessment, and territorial planning.
+
+tracker=https://github.com/ludovico85/estraicatasto/issues
+repository=https://github.com/ludovico85/estraicatasto
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=no
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=cadastre, catasto, geojson
+
+homepage=https://github.com/ludovico85/estraicatasto
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
+Category of the plugin: Raster, Vector, Database or Web
+# category=
+
+# If the plugin can run on QGIS Server.
+server=False
+
