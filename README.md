@@ -1,7 +1,7 @@
 # EstraiCatasto
 
 [![Plugin QGIS](https://img.shields.io/badge/QGIS-3.22%2B-green.svg)](https://qgis.org)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License: GPL v2](https://img.shields.io/badge/license-GPL--2.0-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 [![Build Status](https://img.shields.io/badge/build-manual-blue.svg)]()
 [![Last update](https://img.shields.io/github/last-commit/frateludovico/estraicatasto)](https://github.com/frateludovico/estraicatasto/commits/main)
 [![Issues](https://img.shields.io/github/issues/frateludovico/estraicatasto)](https://github.com/frateludovico/estraicatasto/issues)
