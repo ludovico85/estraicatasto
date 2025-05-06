@@ -3,7 +3,7 @@
 [![Plugin QGIS](https://img.shields.io/badge/QGIS-3.22%2B-green.svg)](https://qgis.org)
 [![License: GPL v2](https://img.shields.io/badge/license-GPL--2.0-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 [![Build Status](https://img.shields.io/badge/build-manual-blue.svg)]()
-[![Last update](https://img.shields.io/github/last-commit/frateludovico/estraicatasto)](https://github.com/ludovico85/estraicatasto/commits/main)
+[![Last update](https://img.shields.io/github/last-commit/ludovico85/estraicatasto)](https://github.com/ludovico85/estraicatasto/commits/main)
 [![Issues](https://img.shields.io/github/issues/ludovico85/estraicatasto)](https://github.com/ludovico85/estraicatasto/issues)
 [![GitHub Release](https://img.shields.io/github/v/release/ludovico85/estraicatasto)](https://github.com/ludovico85/estraicatasto/releases/tag/v1.0.0)
 
