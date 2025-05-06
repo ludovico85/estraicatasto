@@ -5,7 +5,7 @@
 [![Build Status](https://img.shields.io/badge/build-manual-blue.svg)]()
 [![Last update](https://img.shields.io/github/last-commit/frateludovico/estraicatasto)](https://github.com/ludovico85/estraicatasto/commits/main)
 [![Issues](https://img.shields.io/github/issues/ludovico85/estraicatasto)](https://github.com/ludovico85/estraicatasto/issues)
-![GitHub Release](https://img.shields.io/github/v/release/ludovico85/estraicatasto)(https://github.com/ludovico85/estraicatasto/releases/tag/v1.0.0)
+[![GitHub Release](https://img.shields.io/github/v/release/ludovico85/estraicatasto)](https://github.com/ludovico85/estraicatasto/releases/tag/v1.0.0)
 
 ---
 
