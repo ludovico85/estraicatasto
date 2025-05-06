@@ -136,10 +136,10 @@ class EstraiCatastoDialog(QtWidgets.QDialog, FORM_CLASS):
                 elif gtype == QgsWkbTypes.PointGeometry:
                     layers_by_geom["POINT"].setdefault(livello, []).append(feature)
     
-        self.textEdit_log.append("📊 Classificazione completata:")
-        self.textEdit_log.append(f"  - POLYGON → {list(layers_by_geom['POLYGON'].keys())}")
-        self.textEdit_log.append(f"  - POINT → {list(layers_by_geom['POINT'].keys())}")
-        self.textEdit_log.append(f"  - LINEE → {len(layers_by_geom['LINEE'])} feature")
+        #self.textEdit_log.append("📊 Classificazione completata:")
+        #self.textEdit_log.append(f"  - POLYGON → {list(layers_by_geom['POLYGON'].keys())}")
+        #self.textEdit_log.append(f"  - POINT → {list(layers_by_geom['POINT'].keys())}")
+        #self.textEdit_log.append(f"  - LINEE → {len(layers_by_geom['LINEE'])} feature")
     
         # Stile directory
         stile_dir = None
