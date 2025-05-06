@@ -119,8 +119,8 @@ class EstraiCatastoDialog(QtWidgets.QDialog, FORM_CLASS):
                 livello_raw = feature["LIVELLO"] if "LIVELLO" in feature.fields().names() else "SENZA_LIVELLO"
                 livello = mappa_alias_livelli.get(livello_raw.upper(), livello_raw)
     
-                if livello != livello_raw:
-                    self.textEdit_log.append(f"ℹ️ Livello '{livello_raw}' mappato in '{livello}' nel file: {path}")
+                #if livello != livello_raw:
+                    #self.textEdit_log.append(f"ℹ️ Livello '{livello_raw}' mappato in '{livello}' nel file: {path}")
     
                 if livello.upper() not in livelli_attesi:
                     self.textEdit_log.append(f"🧭 Livello non previsto: '{livello}' trovato nel file: {path}")
