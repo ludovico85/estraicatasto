@@ -1,4 +1,4 @@
-# EstraiCatasto
+# EstraiCatasto ![alt text](https://github.com/ludovico85/estraicatasto/blob/main/estrai_catasto/icon.png?raw=true)
 
 [![Plugin QGIS](https://img.shields.io/badge/QGIS-3.22%2B-green.svg)](https://qgis.org)
 [![License: GPL v2](https://img.shields.io/badge/license-GPL--2.0-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
