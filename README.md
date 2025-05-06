@@ -18,9 +18,9 @@
 - Classificare gli oggetti per attributo (FABBRICATI, PARTICELLE, ACQUE, STRADE, ECC.)
 - Salvare i layer in un file GeoPackage
 - Caricarli automaticamente nel progetto QGIS
-- Caricare uno stile predefinito (ispirato allo stide CAD e allo stile WMS)
+- Caricare uno stile predefinito (ispirato allo stile CAD e allo stile WMS)
 
-Utile per **geometri, pianificatori, tecnici GIS** che lavorano su dati catastali distributi tramite piattafomra SISTER dell'[Agenzia delle Entrate](https://iampe.agenziaentrate.gov.it/sam/UI/Login?realm=/agenziaentrate).
+Utile per **geometri, pianificatori, tecnici GIS** che lavorano su dati catastali distributi tramite piattaforma SISTER dell'[Agenzia delle Entrate](https://iampe.agenziaentrate.gov.it/sam/UI/Login?realm=/agenziaentrate).
 
 ---
 
@@ -39,4 +39,3 @@ Utile per **geometri, pianificatori, tecnici GIS** che lavorano su dati catastal
 2. In QGIS: `Plugins > Gestisci e installa plugin > Installa da file .zip`
 3. Seleziona `estraicatasto_vX.Y.Z.zip`
 4. Abilita il plugin
-
