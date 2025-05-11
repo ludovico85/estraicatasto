@@ -23,6 +23,14 @@ class EstraiCatastoDialog(QtWidgets.QDialog, FORM_CLASS):
         self.btn_browse_output.clicked.connect(self.scegli_output_gpkg)
         self.btn_run.clicked.connect(self.esegui_elaborazione)
         self.comboBox_stile.currentTextChanged.connect(self.aggiorna_interfaccia_stile)
+        
+        
+        # Connetti il pulsante OK al reset manuale
+        if hasattr(self, 'buttonBox'):
+            self.buttonBox.accepted.connect(self.reset_dialog_fields)
+        elif hasattr(self, 'button_box'):
+            self.button_box.accepted.connect(self.reset_dialog_fields)
+
 
     def aggiorna_interfaccia_stile(self, testo):
         if testo.lower() == "stile wms":
@@ -212,5 +220,21 @@ class EstraiCatastoDialog(QtWidgets.QDialog, FORM_CLASS):
     
         self.textEdit_log.append("✅ Esportazione completata.")
         self.progressBar.setValue(100)
+        QtWidgets.QApplication.processEvents()
+        time.sleep(2)  # pausa per mostrare il 100%
+        self.progressBar.setValue(0)
+
         elapsed = time.time() - start_time
         self.textEdit_log.append(f"⏱ Tempo totale di elaborazione: {elapsed:.2f} secondi")
+        
+    def reset_dialog_fields(self):
+        self.listWidget_inputs.clear()
+        self.lineEdit_output.clear()
+        self.textEdit_log.clear()
+        self.comboBox_stile.setCurrentIndex(0)
+        self.checkBox_mappa_continua.setChecked(False)
+        self.progressBar.setValue(0)
+
+    def closeEvent(self, event):
+        self.reset_dialog_fields()
+        event.accept()
