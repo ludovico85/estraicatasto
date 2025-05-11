@@ -39,3 +39,7 @@ Utile per **geometri, pianificatori, tecnici GIS** che lavorano su dati catastal
 2. In QGIS: `Plugins > Gestisci e installa plugin > Installa da file .zip`
 3. Seleziona `estraicatasto_vX.Y.Z.zip`
 4. Abilita il plugin
+
+## Demo
+
+![Demo](media/example.gif)
