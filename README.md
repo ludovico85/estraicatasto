@@ -37,13 +37,13 @@ Utile per **geometri, pianificatori, tecnici GIS** che lavorano su dati catastal
 
 Per installare il plugin direttamente da QGIS, segui questi passaggi:
 
-1. Apri QGIS e vai al menu: Plugins → Gestione e installazione plugin...
-2. Nella finestra che si apre, clicca sull’icona dell’ingranaggio in alto a destra (⚙️) per accedere alle impostazioni.
-3. Abilita i plugin sperimentali: Metti la spunta su "Mostra anche i plugin sperimentali".
+1. Apri QGIS e vai al menu: `Plugins > Gestione e installazione plugin...`
+2. Nella finestra che si apre, clicca su 'Impostazioni <img src="https://docs.qgis.org/3.40/en/_images/mActionTransformSettings.png" width="25"/> per accedere alle impostazioni.
+3. Abilita i plugin sperimentali: metti la spunta su "Mostra anche i plugin sperimentali".
 4. Torna alla scheda Tutti o usa la barra di ricerca per cercare il plugin: EstraiCatasto
 5. Seleziona il plugin dalla lista e clicca su "Installa plugin".
-	ℹ️ Nota: il plugin è attualmente in fase sperimentale. Assicurati di aver attivato l’opzione nelle impostazioni per poterlo visualizzare e installare.
-
+   > ℹ️ **Nota:** il plugin è attualmente in fase sperimentale. Assicurati di aver attivato l’opzione nelle impostazioni per poterlo visualizzare e installare.
+   
 ### 📦 Da ZIP (manuale)
 
 1. Scarica l'ultima versione da [Releases](https://github.com/ludovico85/estraicatasto/releases)
