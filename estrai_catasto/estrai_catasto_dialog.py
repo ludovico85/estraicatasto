@@ -219,6 +219,41 @@ class EstraiCatastoDialog(QtWidgets.QDialog, FORM_CLASS):
         unisci_geopackage(tmp_files, output_path, elimina_tmp=True)
     
         self.textEdit_log.append("✅ Esportazione completata.")
+        # Carica i layer finali da output GPKG
+        self.textEdit_log.append("📂 Caricamento layer dal file finale...")
+        from osgeo import ogr  # Assicurati che sia già importato sopra
+
+        driver = ogr.GetDriverByName("GPKG")
+        ds = driver.Open(output_path, 0)
+        if ds:
+            # Determina directory dello stile selezionato
+            stile_dir = None
+            mapping = {"stile wms": "wms", "stile cad": "cad"}
+            if stile_sel in mapping:
+                stile_dir = os.path.join(os.path.dirname(__file__), "styles", mapping[stile_sel])
+
+            for i in range(ds.GetLayerCount()):
+                layer = ds.GetLayer(i)
+                layer_name = layer.GetName()
+                layer_path = f"{output_path}|layername={layer_name}"
+                vlayer = QgsVectorLayer(layer_path, layer_name, "ogr")
+                if vlayer.isValid():
+                    QgsProject.instance().addMapLayer(vlayer)
+                    self.textEdit_log.append(f"✅ Layer caricato: {layer_name}")
+
+                    # ➕ Applica stile se disponibile
+                    if stile_dir:
+                        qml_path = os.path.join(stile_dir, f"{layer_name}.qml")
+                        if os.path.exists(qml_path):
+                            vlayer.loadNamedStyle(qml_path)
+                            vlayer.triggerRepaint()
+                            self.textEdit_log.append(f"🎨 Stile applicato")
+                        else:
+                            self.textEdit_log.append(f"⚠️ Stile non trovato per: {layer_name}")
+                else:
+                    self.textEdit_log.append(f"⚠️ Layer non valido: {layer_name}")
+        else:
+            self.textEdit_log.append("❌ Impossibile aprire il file GPKG finale per il caricamento.")
         self.progressBar.setValue(100)
         QtWidgets.QApplication.processEvents()
         time.sleep(2)  # pausa per mostrare il 100%

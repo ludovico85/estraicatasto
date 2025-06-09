@@ -76,16 +76,16 @@ def scrivi_con_gdal(nome_layer, features, geometry_type, output_path, epsg, stil
 
     layer_path = f"{output_path}|layername={nome_layer}"
     loaded = QgsVectorLayer(layer_path, nome_layer, "ogr")
-    if loaded.isValid():
-        QgsProject.instance().addMapLayer(loaded)
-
-        if stile_dir:
-            qml_path = os.path.join(stile_dir, f"{nome_layer}.qml")
-            if os.path.exists(qml_path):
-                loaded.loadNamedStyle(qml_path)
-                loaded.triggerRepaint()
-                print(f"🎨 Stile applicato: {qml_path}")
-            else:
-                print(f"⚠️ Stile non trovato: {qml_path}")
-    else:
-        print(f"⚠️ Layer '{nome_layer}' NON caricato (errore di validità).")
+    #if loaded.isValid():
+    #    QgsProject.instance().addMapLayer(loaded)
+    #
+    #    if stile_dir:
+    #        qml_path = os.path.join(stile_dir, f"{nome_layer}.qml")
+    #        if os.path.exists(qml_path):
+    #            loaded.loadNamedStyle(qml_path)
+    #            loaded.triggerRepaint()
+    #            print(f"🎨 Stile applicato: {qml_path}")
+    #        else:
+    #            print(f"⚠️ Stile non trovato: {qml_path}")
+    #else:
+    #    print(f"⚠️ Layer '{nome_layer}' NON caricato (errore di validità).")

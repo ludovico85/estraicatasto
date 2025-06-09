@@ -6,7 +6,7 @@
 name=Estrai Catasto
 qgisMinimumVersion=3.0
 description=Load cadastral GeoJSON files, split layers by attribute, apply styles, and export to a single GeoPackage. Ideal for Italian land registry workflows.
-version=1.0.1
+version=1.1.0
 author=Ludovico Frate
 email=frateludovico@gmail.com
 
@@ -20,6 +20,9 @@ repository=https://github.com/ludovico85/estraicatasto
 hasProcessingProvider=no
 # Uncomment the following line and add your changelog:
 changelog=
+  [1.1.0] - 2025-06-09
+  - Disabled automatic loading of intermediate temporary layers: layers written to temporary GeoPackages are no longer added to the project, improving project consistency and reducing clutter.
+  
   [1.0.1] - 2025-05-11
   - Improved UI handling between runs
   - Added automatic progress bar reset after processing
